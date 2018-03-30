@@ -1,15 +1,46 @@
+/* this is global change; it changes everything at the top level */
 html {
-    font-size: 12px; /* px means 'pixels': the base font size is now 10 pixels high  */
+    font-size: 12px; /* px means 'pixels': the base font size is now 12 pixels high  */
     font-family: ubuntu;
+    background-color: #00539F; /* this is the color behind the element's content, not just the
+                                    content such as text */
+}
+
+body {
+    width: 600px; /* forces the element to be fixed size of 600px*/
+    margin: 0 auto;
+    background-color: #FF9500;
+    padding: 0 20px 20px 20px;
+    border: 5px solid black; /* this is a short hand representation for: border-width, bolder-style
+                                  , border-color */
 }
 
 h3 {
     font-size: 22px;
     text-align: center;
+    margin: 0;   /* adding this because without this the browser apply a default styling to h3
+                    element; even if there is no css applied */
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+    padding: 20px 5px;
+    color: #A3589F;
+    text-shadow: 3px 3px 1px black; /* the property values are:
+                                            horizontal-offset (a neg number will move the shadow to
+                                                the left
+                                            vertical-offset (a neg number will move the shadow up)
+                                            blurryness (a higher number will make the shadow more blurry)
+                                            shadow-color (the color of the shadow) */                                            
 }
 
 h4 {
     text-align: center;
+}
+
+/* center image*/
+img {
+    display: block;
+    margin: 0 auto;    
 }
 
 p, li {
