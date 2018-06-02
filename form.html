@@ -64,11 +64,11 @@
         </style>
     </head>
     <body>
-        <p>This is a paragraph</p>
+        <p>Required fields are followed by <abbr title="required">*</abbr>.</p>        
         <form action="/my-handling-form-page" method="post">
             <div>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="user_name">
+                <label for="name">Name: <abbr title="required">*</abbr></label>
+                <input id="name" type="text" name="user_name">
             </div>
             <div>
                 <label for="mail">Email:</label>
